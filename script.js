@@ -17,3 +17,6 @@ button.onclick = function AddTask (event){
 function DelTask (a){
     parent.removeChild(a.parentElement)
 };
+function ChangeTheme(){
+    document.body.classList.toggle("dark");
+}
