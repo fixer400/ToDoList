@@ -2,6 +2,7 @@
 	padding: 0;
 	margin: 0;
 	border: 0;
+	box-sizing: border-box;
 	}
 body{
 	background: #C4C4C4;
@@ -63,19 +64,20 @@ header{
 	border-radius: 5px;
 	margin-top: 30px;
 	padding-top: 31px;
+	overflow-y: scroll;
+	overflow-x: hidden;
 }
 .todo__list__action button{
 	position: absolute;
 	width: 52px;
 	height: 52px;
 	background: #FF9393;
-	border-radius: 5px;
+	border-radius: 50%;
 	z-index: 4;
+	right:-20px;
+	top:-20px;
 	}
-.todo__list__content{
-	display: flex;
-	justify-content: center;
-}
+
 .todo__element{
 	width: 735px;
 	height: 66px;
@@ -83,4 +85,8 @@ header{
 	border-radius: 5px;
 	align-items: right;
 	margin:22px auto;
+	position: relative;
+	line-height: 66px;
+	font-size: 24px;
+	padding-left: 19px;
 }
